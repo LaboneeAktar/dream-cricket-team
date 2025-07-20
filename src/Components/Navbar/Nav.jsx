@@ -1,7 +1,9 @@
+import logo from "../../assets/images/logo.png";
+import { HiCurrencyDollar } from "react-icons/hi2";
 const Nav = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-lg lg:mb-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,51 +28,46 @@ const Nav = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Home</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>Fixture</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Teams</a>
               </li>
+              <li>
+                <a>Schedules</a>
+              </li>
+              <button className="btn" type="button">
+                0 Coins{" "}
+                <HiCurrencyDollar className="text-yellow-500 text-lg font-bold" />
+              </button>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <div>
+            <img className="ml-28 lg:ml-10" src={logo} alt="" />
+          </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
+        <div className="navbar-end hidden lg:flex lg:items-center">
+          <ul className="flex gap-5 px-10 py-4">
+            <li className="pt-2">
+              <a>Home</a>
             </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+            <li className="pt-2">
+              <a>Fixture</a>
             </li>
-            <li>
-              <a>Item 3</a>
+            <li className="pt-2">
+              <a>Teams</a>
             </li>
+            <li className="pt-2">
+              <a>Schedules</a>
+            </li>
+            <button className="btn px-3 py-2" type="button">
+              0 Coins{" "}
+              <HiCurrencyDollar className="text-yellow-500 text-lg font-bold" />
+            </button>
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
         </div>
       </div>
     </div>
