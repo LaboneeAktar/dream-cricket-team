@@ -21,76 +21,6 @@
   },
   {
     "id": 3,
-    "name": "Mashrur Rahman",
-    "cover": "https://i.ibb.co/gMBpbTdG/player-5.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "Bowler",
-    "ratings": 4.2,
-    "type": "Right Arm Fast",
-    "price": "$21000000"
-  },
-  {
-    "id": 4,
-    "name": "Liton Das",
-    "cover": "https://i.ibb.co/4n5tvsT5/player-4.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "Batsman",
-    "ratings": 4.3,
-    "type": "Right Hand Bat",
-    "price": "$19500000"
-  },
-  {
-    "id": 5,
-    "name": "Mehidy Miraz",
-    "cover": "https://i.ibb.co/M55XNWYD/cricket-equipment-digital-art-3.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "All Rounder",
-    "ratings": 4.6,
-    "type": "Right Hand Bat / Right Arm Offbreak",
-    "price": "$25000000"
-  },
-  {
-    "id": 6,
-    "name": "Nasum Ahmed",
-    "cover": "https://i.ibb.co/8LSYtPcv/player-9.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "Bowler",
-    "ratings": 4.1,
-    "type": "Left Arm Orthodox",
-    "price": "$16000000"
-  },
-  {
-    "id": 7,
-    "name": "Taskin Ahmed",
-    "cover": "https://i.ibb.co/Mk8V0GNs/freepik-the-style-is-candid-image-photography-with-natural-45734.png",
-    "nationality": "Bangladeshi",
-    "playing_type": "Bowler",
-    "ratings": 4.4,
-    "type": "Right Arm Fast",
-    "price": "$22000000"
-  },
-  {
-    "id": 8,
-    "name": "Afif Hossain",
-    "cover": "https://i.ibb.co/6RC3D6RS/cricket-equipment-digital-art-4.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "All Rounder",
-    "ratings": 4.0,
-    "type": "Left Hand Bat / Right Arm Offbreak",
-    "price": "$18000000"
-  },
-  {
-    "id": 9,
-    "name": "Mustafizur Rahim",
-    "cover": "https://i.ibb.co/B5YD4NCr/cricket-equipment-digital-art-6.jpg",
-    "nationality": "Bangladeshi",
-    "playing_type": "Bowler",
-    "ratings": 4.7,
-    "type": "Left Arm Fast Medium",
-    "price": "$30000000"
-  },
-  {
-    "id": 10,
     "name": "Nurul Hasan",
     "cover": "https://i.ibb.co/jkLtSGpr/cricket-equipment-digital-art-5.jpg",
     "nationality": "Bangladeshi",
@@ -100,7 +30,7 @@
     "price": "$17000000"
   },
   {
-    "id": 11,
+    "id": 4,
     "name": "Mahmudul Rony",
     "cover": "https://i.ibb.co/zHxHRn1Y/cricket-equipment-digital-art-2.jpg",
     "nationality": "Bangladeshi",
@@ -108,5 +38,76 @@
     "ratings": 4.0,
     "type": "Right Hand Bat",
     "price": "$15000000"
+  },
+  {
+    "id": 5,
+    "name": "Mashrur Rahman",
+    "cover": "https://i.ibb.co/gMBpbTdG/player-5.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "Bowler",
+    "ratings": 4.2,
+    "type": "Right Arm Fast",
+    "price": "$21000000"
+  },
+  {
+    "id": 6,
+    "name": "Afif Hossain",
+    "cover": "https://i.ibb.co/6RC3D6RS/cricket-equipment-digital-art-4.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "All Rounder",
+    "ratings": 4.0,
+    "type": "Left Hand Bat / Right Arm Offbreak",
+    "price": "$18000000"
+  },
+  {
+    "id": 7,
+    "name": "Liton Das",
+    "cover": "https://i.ibb.co/4n5tvsT5/player-4.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "Batsman",
+    "ratings": 4.3,
+    "type": "Right Hand Bat",
+    "price": "$19500000"
+  },
+  {
+    "id": 8,
+    "name": "Mehidy Miraz",
+    "cover": "https://i.ibb.co/M55XNWYD/cricket-equipment-digital-art-3.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "All Rounder",
+    "ratings": 4.6,
+    "type": "Right Hand Bat / Right Arm Offbreak",
+    "price": "$25000000"
+  },
+  {
+    "id": 9,
+    "name": "Nasum Ahmed",
+    "cover": "https://i.ibb.co/8LSYtPcv/player-9.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "Bowler",
+    "ratings": 4.1,
+    "type": "Left Arm Orthodox",
+    "price": "$16000000"
+  },
+  {
+    "id": 10,
+    "name": "Taskin Ahmed",
+    "cover": "https://i.ibb.co/Mk8V0GNs/freepik-the-style-is-candid-image-photography-with-natural-45734.png",
+    "nationality": "Bangladeshi",
+    "playing_type": "Bowler",
+    "ratings": 4.4,
+    "type": "Right Arm Fast",
+    "price": "$22000000"
+  },
+
+  {
+    "id": 11,
+    "name": "Mustafizur Rahim",
+    "cover": "https://i.ibb.co/B5YD4NCr/cricket-equipment-digital-art-6.jpg",
+    "nationality": "Bangladeshi",
+    "playing_type": "Bowler",
+    "ratings": 4.7,
+    "type": "Left Arm Fast Medium",
+    "price": "$30000000"
   }
 ]
