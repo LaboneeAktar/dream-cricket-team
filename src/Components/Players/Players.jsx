@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Player from "../Player/Player";
 
 const Players = () => {
   const [players, setPlayers] = useState([]);
@@ -12,8 +13,8 @@ const Players = () => {
   }, []);
 
   return (
-    <div className="mx-10 my-20">
-      <div className="flex justify-between">
+    <div className="mx-auto">
+      <div className="flex justify-between mx-10 mt-10 lg:mt-20">
         <h2 className="text-2xl font-bold">
           Available Players : {players.length}
         </h2>
@@ -40,6 +41,12 @@ const Players = () => {
             Selected (0)
           </button>
         </div>
+      </div>
+
+      <div className="mt-10 mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 items-center">
+        {players.map((player) => (
+          <Player key={player.id} player={player}></Player>
+        ))}
       </div>
     </div>
   );
