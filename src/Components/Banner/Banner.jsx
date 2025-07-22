@@ -1,6 +1,6 @@
 import bannerShadow from "../../assets/images/bg-shadow.png";
 import bannerImage from "../../assets/images/banner-main.png";
-const Banner = () => {
+const Banner = ({ handleClaimCredit }) => {
   return (
     <div>
       <div
@@ -23,7 +23,10 @@ const Banner = () => {
             <div className="max-w-md text-center mx-auto">
               <p className="mb-5">Beyond Boundaries Beyond Limits</p>
               <span className="border border-[#E7FE29] px-1 py-3 rounded-xl">
-                <button className="px-4 py-2 text-sm font-semibold text-black bg-[#E7FE29] border border-lime-400 rounded-xl shadow-md hover:bg-lime-300 hover:shadow-lg transition-all duration-300">
+                <button
+                  onClick={() => handleClaimCredit()}
+                  className="px-4 py-2 text-sm font-semibold text-black bg-[#E7FE29] border border-lime-400 rounded-xl shadow-md hover:bg-lime-300 hover:shadow-lg transition-all duration-300"
+                >
                   Claim Free Credit
                 </button>
               </span>
