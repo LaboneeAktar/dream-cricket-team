@@ -3,42 +3,40 @@ import bgShadowImg from "../../assets/images/bg-shadow.png";
 
 const Footer = () => {
   return (
-    <div className="mt-90">
+    <div className="mt-80">
       <footer className="bg-gray-900 relative">
-        <div className="p-2 border border-gray-50 inline-block rounded-2xl absolute left-48 -top-44">
+        <div className="p-2 border border-gray-50 inline-block rounded-2xl absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 -top-44">
           <div
-            className="bg-white lg:h-[330px] lg:w-[940px] rounded-2xl"
+            className="bg-slate-200 lg:h-[330px] lg:w-[940px] rounded-2xl"
             style={{
               backgroundImage: `url(${bgShadowImg})`,
             }}
           >
-            <div className="">
-              <span>
-                <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">
-                  Subscribe to our Newsletter
-                </h2>
-                <p className="text-center text-sm text-gray-600 mb-6">
-                  Get the latest updates and news right in your inbox!
-                </p>
-                <form className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 w-full sm:w-auto"
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-2 rounded-md font-semibold text-sm text-white bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 hover:opacity-90 transition"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </span>
+            <div className="pt-24">
+              <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">
+                Subscribe to our Newsletter
+              </h2>
+              <p className="text-center text-sm text-gray-600 mb-6">
+                Get the latest updates and news right in your inbox!
+              </p>
+              <form className="flex flex-col sm:flex-row gap-4 justify-center">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 w-full sm:w-auto"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-2 rounded-md font-semibold text-sm text-black bg-gradient-to-r from-purple-300 via-orange-200 to-amber-400 hover:bg-gradient-to-bl cursor-pointer"
+                >
+                  Subscribe
+                </button>
+              </form>
             </div>
           </div>
         </div>
         <div className="mx-auto w-full p-4 py-6 lg:py-8">
-          <div className="mb-6 lg:mb-16 md:mb-0 flex justify-center pt-56">
+          <div className="mb-6 lg:mb-16 md:mb-0 flex justify-center pt-44">
             <img src={footerImg} className="" alt="Footer Logo" />
           </div>
 
@@ -86,7 +84,9 @@ const Footer = () => {
                     />
                   </label>
                 </div>
-                <button className="btn join-item">Subscribe</button>
+                <button className="join-item px-6 py-2 font-semibold text-sm text-black bg-gradient-to-r from-purple-300 via-orange-300 to-pink-400 hover:bg-pink-500 hover:bg-gradient-to-l cursor-pointer">
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>
