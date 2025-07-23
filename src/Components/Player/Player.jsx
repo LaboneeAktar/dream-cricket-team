@@ -49,7 +49,7 @@ const Player = ({ player }) => {
               <p className="text-gray-500">{type}</p>
             </span>
             <span className="flex justify-between items-center">
-              <p>Price : {price}</p>
+              <p>Price : ${price}</p>
               <button className=" text-sm py-1 px-3 border border-slate-300 bg-base-300 rounded-md text-gray-800 cursor-pointer hover:bg-[#E7FE29] hover:shadow-lg transition-all duration-100">
                 Choose Player
               </button>

@@ -6,12 +6,12 @@ import Footer from "../../Components/Footer/Footer";
 import { toast } from "react-toastify";
 
 const Home = () => {
-  const [claimCredit, setClaimCredit] = useState(0);
+  const [creditValue, setCreditValue] = useState(0);
 
-  const handleClaimCredit = () => {
-    if (claimCredit + 25000000 <= 100000000) {
-      const newCredit = claimCredit + 25000000;
-      setClaimCredit(newCredit);
+  const handleCreditValue = () => {
+    if (creditValue + 25000000 <= 100000000) {
+      const newCredit = creditValue + 25000000;
+      setCreditValue(newCredit);
       if (newCredit === 75000000) {
         toast.warning("Only One Chance Left to Claim");
       }
@@ -23,8 +23,8 @@ const Home = () => {
 
   return (
     <div>
-      <Nav claimCredit={claimCredit}></Nav>
-      <Banner handleClaimCredit={handleClaimCredit}></Banner>
+      <Nav creditValue={creditValue}></Nav>
+      <Banner handleCreditValue={handleCreditValue}></Banner>
       <Players></Players>
       <Footer></Footer>
     </div>

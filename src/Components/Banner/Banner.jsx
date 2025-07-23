@@ -1,7 +1,7 @@
 import bannerShadow from "../../assets/images/bg-shadow.png";
 import bannerImage from "../../assets/images/banner-main.png";
 import { ToastContainer } from "react-toastify";
-const Banner = ({ handleClaimCredit }) => {
+const Banner = ({ handleCreditValue }) => {
   return (
     <div>
       <div
@@ -26,7 +26,7 @@ const Banner = ({ handleClaimCredit }) => {
               <span className="border border-[#E7FE29] px-1 py-3 rounded-xl">
                 <button
                   onClick={() => {
-                    handleClaimCredit();
+                    handleCreditValue();
                   }}
                   className="px-4 py-2 text-sm font-semibold text-black bg-[#E7FE29] border border-lime-400 rounded-xl shadow-md hover:bg-lime-300 hover:shadow-lg transition-all duration-300"
                 >
