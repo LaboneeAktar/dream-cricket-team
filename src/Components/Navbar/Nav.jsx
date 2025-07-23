@@ -1,6 +1,6 @@
 import logo from "../../assets/images/logo.png";
 import { HiCurrencyDollar } from "react-icons/hi2";
-const Nav = ({ claimCredit }) => {
+const Nav = ({ creditValue }) => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-lg lg:mb-4">
@@ -64,7 +64,7 @@ const Nav = ({ claimCredit }) => {
               <a>Schedules</a>
             </li>
             <button className="btn px-3 py-2" type="button">
-              {claimCredit} Coins{" "}
+              {creditValue} Coins{" "}
               <HiCurrencyDollar className="text-yellow-500 text-lg font-bold" />
             </button>
           </ul>

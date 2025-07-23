@@ -1,8 +1,9 @@
 import user from "../../assets/user.png";
 import { FaFlag } from "react-icons/fa6";
 import { TiStarFullOutline } from "react-icons/ti";
+import { ToastContainer } from "react-toastify";
 
-const Player = ({ player }) => {
+const Player = ({ player, handleChoosePlayer }) => {
   const { name, cover, nationality, playing_type, ratings, type, price } =
     player;
   return (
@@ -50,10 +51,14 @@ const Player = ({ player }) => {
             </span>
             <span className="flex justify-between items-center">
               <p>Price : ${price}</p>
-              <button className=" text-sm py-1 px-3 border border-slate-300 bg-base-300 rounded-md text-gray-800 cursor-pointer hover:bg-[#E7FE29] hover:shadow-lg transition-all duration-100">
+              <button
+                onClick={() => handleChoosePlayer(player)}
+                className=" text-sm py-1 px-3 border border-slate-300 bg-base-300 rounded-md text-gray-800 cursor-pointer hover:bg-[#E7FE29] hover:shadow-lg transition-all duration-100"
+              >
                 Choose Player
               </button>
             </span>
+            <ToastContainer position="top-center" />
           </div>
         </div>
       </div>
