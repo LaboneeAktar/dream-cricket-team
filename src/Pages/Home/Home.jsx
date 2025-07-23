@@ -25,7 +25,7 @@ const Home = () => {
     <div>
       <Nav creditValue={creditValue}></Nav>
       <Banner handleCreditValue={handleCreditValue}></Banner>
-      <Players></Players>
+      <Players creditValue={creditValue}></Players>
       <Footer></Footer>
     </div>
   );

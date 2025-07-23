@@ -1,3 +1,4 @@
+import { MdDelete } from "react-icons/md";
 const SelectedPlayers = ({ selectPlayer, handleDelete }) => {
   const { name, cover, type } = selectPlayer;
   return (
@@ -22,8 +23,7 @@ const SelectedPlayers = ({ selectPlayer, handleDelete }) => {
               onClick={() => handleDelete(selectPlayer)}
               className="btn mt-5"
             >
-              {" "}
-              Delete
+              <MdDelete className="text-red-700 text-3xl" />
             </button>
           </div>
         </div>

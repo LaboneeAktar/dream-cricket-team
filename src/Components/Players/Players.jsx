@@ -3,7 +3,7 @@ import Player from "../Player/Player";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import { toast } from "react-toastify";
 
-const Players = () => {
+const Players = ({ creditValue }) => {
   const [players, setPlayers] = useState([]);
   const [activeTab, setActiveTab] = useState("available");
   const [selectPlayers, setSelectPlayers] = useState([]);
@@ -17,14 +17,16 @@ const Players = () => {
 
   // Choose Player button function
   const handleChoosePlayer = (player) => {
+    //find existing player
     const existing = selectPlayers.find((p) => p.id === player.id);
-
     if (!existing) {
-      if (selectPlayers.length >= 6) {
-        toast.error("Stop Choosing.. Already Reached 6");
-        return;
-      } else {
+      //Condition for 6 players only
+      if (selectPlayers.length < 6 && creditValue > player.price) {
         setSelectPlayers([...selectPlayers, player]);
+      } else if (creditValue < player.price) {
+        toast.error("You don't have Sufficient Balance");
+      } else {
+        toast.error("Stop Choosing.. Already Reached 6");
       }
     } else {
       toast.error("Already Added this Player");
