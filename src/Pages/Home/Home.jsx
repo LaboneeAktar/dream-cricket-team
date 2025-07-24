@@ -9,10 +9,10 @@ const Home = () => {
   const [creditValue, setCreditValue] = useState(0);
 
   const handleCreditValue = () => {
-    if (creditValue + 25000000 <= 100000000) {
-      const newCredit = creditValue + 25000000;
+    if (creditValue + 2500000 <= 20000000) {
+      const newCredit = creditValue + 2500000;
       setCreditValue(newCredit);
-      if (newCredit === 75000000) {
+      if (newCredit === 17500000) {
         toast.warning("Only One Chance Left to Claim");
       }
     } else {
@@ -25,7 +25,10 @@ const Home = () => {
     <div>
       <Nav creditValue={creditValue}></Nav>
       <Banner handleCreditValue={handleCreditValue}></Banner>
-      <Players creditValue={creditValue}></Players>
+      <Players
+        creditValue={creditValue}
+        setCreditValue={setCreditValue}
+      ></Players>
       <Footer></Footer>
     </div>
   );

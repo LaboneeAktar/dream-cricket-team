@@ -3,10 +3,11 @@ import Player from "../Player/Player";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import { toast } from "react-toastify";
 
-const Players = ({ creditValue }) => {
+const Players = ({ creditValue, setCreditValue }) => {
   const [players, setPlayers] = useState([]);
   const [activeTab, setActiveTab] = useState("available");
   const [selectPlayers, setSelectPlayers] = useState([]);
+  const [playerCredit, setPlayerCredit] = useState(0);
 
   useEffect(() => {
     fetch("players.json")
@@ -20,6 +21,10 @@ const Players = ({ creditValue }) => {
     //find existing player
     const existing = selectPlayers.find((p) => p.id === player.id);
     if (!existing) {
+      const newPrice = playerCredit + player.price;
+      setPlayerCredit(newPrice);
+      const totalPrice = creditValue - playerCredit;
+      setCreditValue(totalPrice);
       //Condition for 6 players only
       if (selectPlayers.length < 6 && creditValue > player.price) {
         setSelectPlayers([...selectPlayers, player]);

@@ -6,6 +6,9 @@ Live Website - [Dream Cricket Team](https://dream-cricket-team-11.netlify.app/)
 
 - Explore Players Details in Card
 - Claim Free Credit
+- Can Choose Your Favorite Player (Not more than 6)
+- Can Delete Player
+- Can't Choose Player if you don't have sufficient credit
 
 #### Resources and Credits
 
